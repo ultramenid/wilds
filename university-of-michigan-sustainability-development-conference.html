@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilds</title>
+    <link rel="stylesheet" href="style/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+<body class="font-sans font-light">
+    <!-- nav -->
+    <div class="max-w-6xl mx-auto px-4 mt-6 py-2 flex sm:flex-row flex-col justify-between items-end gap-6">
+        <div class="flex sm:justify-start justify-center gap-6">
+            <a href="index.html"><img src="wilds-logo.png" alt="wilds" class="h-16"></a>
+            <p class="w-5/12 text-xss">Wildlife: Loss, Damage, & Sanctions.
+                A project on conceptualising the harm from
+                & remedies to illegal wildlife trade.</p>
+        </div>
+        <div class="w-full flex sm:flex-wrap flex-nowrap text-nowrap overflow-x-auto scrollbar-hide gap-6 py-3">
+            <a href="thewildapproach.html">The WILDS approach </a>
+            <a href="ourwork.html">Our work </a>
+            <a href="resources.html">Resources </a>
+            <a href="partnetcollaborator.html">Partner & Collaborators </a>
+            <a href="blog.html" class="font-bold">Blog </a>
+        </div>
+    </div>
+    <div class="border-b border-black mb-4"></div>
+    
+    <div class="max-w-3xl mx-auto px-4">
+        <a href="blog.html" class="text-red-700 font-bold "> <  back</a>
+        <p class=" text-sm text-right font-light text-gray-500 ">Oct 24, 2019</p>
+        <img src="assets/blog-9.webp" alt="wilds" class="w-full ">
+        <h1 class=" mt-12 font-bold text-2xl">University of Michigan Sustainability & Development Conference</h1>
+        <p class="mt-6 mb-6">
+            Jacob highlighted the WILDS Project in his talk, "Sustainability through environmental liability" at the 2nd Sustainabilty & Development Conference at the Univeristy of Michigan--an event that seeks to catalyze work and partnerships around sustainable development, such that it is not about a single discipline or theoretical orientation but is instead a platform which enables conversation across the ways in which that sustainability and development are imagined and realized.    
+        </p>
+       
+        <p class="mt-6">
+            In his talk that highlighted that responding to the Sustainable Development Goals also involves measures that respond to environmental harm. This includes not only adaptive measures, but also actions that further environmental justice aims.  Liability for environmental harm involves a set of legal approaches that require responsible parties to remedy the environmental harm they cause. Based on the "polluter pays" principle, these suits can order perpetrators to take actions such as restoration, issue apologies, compensate victims, and invest into education.  Although not a new concept, liability for environmental harm remains under-explored globally--including in the context of harm from commercial illegal wildlife trade.  Inspired by the WILDS Project, his talk suggested ways in which social and natural scientists might inform environmental litigation, as an increasingly important part of daily life and environmental management in the Anthropocene. 
+        </p>
+
+        <p class="mt-6">
+            While at University of Michigan, Jacob also contributed the University of Michigan’s new Online MOOC Masters Course, “<a href="https://online.umich.edu/courses/beyond-the-sustainable-development-goals-addressing-sustainability-and-development/?utm_source=mailchimp&utm_medium=email&utm_campaign=mastertrack-sustainability-and-development&utm_content=beyond-the-sustainable-development-goals-addressing-sustainability-and-development&utm_source=Michigan+Online+Subscription+List&utm_campaign=8903b5daec-EMAIL_CAMPAIGN_2020_04_22_05_03&utm_medium=email&utm_term=0_ce0dfcf5d5-8903b5daec-71736965" class="italic text-red-500 underline">Beyond the Sustainable Development Goals (SDGs): Addressing Sustainability and Development</a>” with a lecture on “Strategies for protecting Life on Land (SDG 15)”. In this he highlighted environmental litigation, as exemplified by the WILDS Project, as a strategy for future sustainability. 
+        </p>
+        
+    </div>
+
+
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-black  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+    <div class="bg-red-600 py-6 mt-12">
+        <p class="text-center max-w-4xl mx-auto text-white text-sm px-2">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
+            Conservation Governance Lab, Lancaster Environment Centre, Library Ave, Bailrigg, Lancaster LA1 4AP, UK
+            ©2021 by WILDS</p>
+    </div>
+</body>
+</html>

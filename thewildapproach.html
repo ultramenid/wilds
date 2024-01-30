@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilds</title>
     <link rel="stylesheet" href="style/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
 <body class="font-sans font-light">
     <!-- nav -->
@@ -26,7 +28,7 @@
     <div class="border-b border-black mb-4"></div>
     
     <div class="max-w-3xl mx-auto px-4 sm:py-12 py-4 sm:mt-12 mt-0">
-        <img src="assets/thewild.webp" alt="wilds" class="w-full">
+        <img src="assets/sitaan.jpg" alt="wilds" class="w-full">
         <h1 class=" mt-12 font-bold text-2xl">THE CHALLENGE</h1>
         <p class="mt-6">
             Illegal wildlife trade (IWT) threatens biodiversity globally. But its impacts are not only
@@ -64,10 +66,25 @@
 
         
     </div>
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-black  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
 
-
-    <div class="bg-red-600 py-6 ">
-        <p class="text-center max-w-4xl mx-auto text-white">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
+    <div class="bg-red-600 py-6">
+        <p class="text-center max-w-4xl mx-auto text-white  text-sm px-2">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
             Conservation Governance Lab, Lancaster Environment Centre, Library Ave, Bailrigg, Lancaster LA1 4AP, UK
             ©2021 by WILDS</p>
     </div>

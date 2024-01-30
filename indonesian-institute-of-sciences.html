@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilds</title>
+    <link rel="stylesheet" href="style/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+<body class="font-sans font-light">
+    <!-- nav -->
+    <div class="max-w-6xl mx-auto px-4 mt-6 py-2 flex sm:flex-row flex-col justify-between items-end gap-6">
+        <div class="flex sm:justify-start justify-center gap-6">
+            <a href="index.html"><img src="wilds-logo.png" alt="wilds" class="h-16"></a>
+            <p class="w-5/12 text-xss">Wildlife: Loss, Damage, & Sanctions.
+                A project on conceptualising the harm from
+                & remedies to illegal wildlife trade.</p>
+        </div>
+        <div class="w-full flex sm:flex-wrap flex-nowrap text-nowrap overflow-x-auto scrollbar-hide gap-6 py-3">
+            <a href="thewildapproach.html">The WILDS approach </a>
+            <a href="ourwork.html">Our work </a>
+            <a href="resources.html">Resources </a>
+            <a href="partnetcollaborator.html">Partner & Collaborators </a>
+            <a href="blog.html" class="font-bold">Blog </a>
+        </div>
+    </div>
+    <div class="border-b border-black mb-4"></div>
+    
+    <div class="max-w-3xl mx-auto px-4">
+        <a href="blog.html" class="text-red-700 font-bold "> <  back</a>
+        <p class=" text-sm text-right font-light text-gray-500 ">
+            Sep 11, 2019</p>
+        <img src="assets/blog-10.webp" alt="wilds" class="w-full ">
+        <h1 class=" mt-12 font-bold text-2xl">INDONESIAN INSTITUTE OF SCIENCES        </h1>
+        <p class="mt-6 mb-6">
+            Colleagues from the Indonesian Institute of Sciences (LIPI), led by our collaborator, <a href="http://biologi.lipi.go.id/index.php/2017-01-04-03-52-26/2017-01-04-03-57-30/kompetensi-sdm/32-peneliti-zoologi/237-taufiq-purna-nugraha" class="underline text-red-500">Dr R Taufiq Purna Nugraha</a> , are working to characertise and value the harm caused by illegal wildlife trade cases.  Building the WILDS framework, they are now populating this with data related to specific illegal wildlife trade cases in Indonesia. This includes, for example, calculating the costs of rehabilitating orang-utan rescued from trade, documenting the costs of DNA tests required when investigating IWT cases, as well as characterising the non-financial social costs associated with harm to endangered species.    
+        </p>
+       
+        <p class="mt-6">
+            LIPI reports directly to the President of the Republic of Indonesia, and is responsibel for organizing research and development, providing guidance and services in science and technology, and advising the government on national science and technology policy.  LIPI  scientists regularly serve as experts to the government on illegal wildlife trade cases.   Drawing the our work, they will now be able to better present to the government the financial and non-financial impacts of the IWT.  
+        </p>
+
+        
+        
+    </div>
+
+
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-black  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+    <div class="bg-red-600 py-6 mt-12">
+        <p class="text-center max-w-4xl mx-auto text-white text-sm px-2">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
+            Conservation Governance Lab, Lancaster Environment Centre, Library Ave, Bailrigg, Lancaster LA1 4AP, UK
+            ©2021 by WILDS</p>
+    </div>
+</body>
+</html>

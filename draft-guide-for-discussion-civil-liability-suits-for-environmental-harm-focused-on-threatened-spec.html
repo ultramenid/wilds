@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilds</title>
+    <link rel="stylesheet" href="style/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+<body class="font-sans font-light">
+    <!-- nav -->
+    <div class="max-w-6xl mx-auto px-4 mt-6 py-2 flex sm:flex-row flex-col justify-between items-end gap-6">
+        <div class="flex sm:justify-start justify-center gap-6">
+            <a href="index.html"><img src="wilds-logo.png" alt="wilds" class="h-16"></a>
+            <p class="w-5/12 text-xss">Wildlife: Loss, Damage, & Sanctions.
+                A project on conceptualising the harm from
+                & remedies to illegal wildlife trade.</p>
+        </div>
+        <div class="w-full flex sm:flex-wrap flex-nowrap text-nowrap overflow-x-auto scrollbar-hide gap-6 py-3">
+            <a href="thewildapproach.html">The WILDS approach </a>
+            <a href="ourwork.html">Our work </a>
+            <a href="resources.html">Resources </a>
+            <a href="partnetcollaborator.html">Partner & Collaborators </a>
+            <a href="blog.html" class="font-bold">Blog </a>
+        </div>
+    </div>
+    <div class="border-b border-black mb-4"></div>
+    
+    <div class="max-w-3xl mx-auto px-4">
+        <a href="blog.html" class="text-red-700 font-bold "> <  back</a>
+        <p class=" text-sm text-right font-light text-gray-500 ">Jul 8, 2020</p>
+        <img src="assets/blog-5.webp" alt="wilds" class="w-full ">
+        <h1 class=" mt-12 font-bold text-2xl">Draft guide for discussion: Civil liability suits for environmental harm--focused on threatened species</h1>
+        <p class="mt-6">
+            Actions such as illegal wildlife trade, deforestation, mining and pollution are often responsible for huge harm to the environment, including impacts on threatened and endangered species, local economies, culture and state budgets. There are growing demands for the legal system to provide social and environmental justice, particularly against the responsible parties who benefit most from environmental crimes. There is also a need for legal responses to match the scale of this harm, in order to protect the environment and people, and also to deter future harmful actions by ensuring that sanctions are high.
+         </p>
+        <p class="mt-6">
+            Legal responses include not only criminal and administrative cases, but also civil lawsuits that can provide a wide range of remedies to environmental harm. Civil lawsuits for environmental harm are based on the premise that, when a party harms the environment, they can also be held liable for taking actions to remedy the harm that they caused. This is often referred to as actions to “make the public whole”, and can involve actions such as restoration, species reintroduction, financial compensation and apologies.
+        </p>
+        <p class="mt-6">
+            One of our aims in the WILDS project has been to explore, and explain, how to pursue a civil liability lawsuit for cases that involve biodiversity--specifically threatened species affected by illegal wildlife trade.  This has proved a huge challenge, drawing not only on the expertise of lawyers in >5 countries, but also ecology, economics and geography.
+        </p>
+        <p class="mt-6">
+            Our first public draft of our guide is now available for public discussion.   
+        </p>
+        <div class="flex w-full justify-center items-center py-4 px-4 border-black border mt-4 mb-4">
+            <a href="assets/draft.pdf" class="text-center text-red-500 underline">Draft for discussion_July 2020_Civil liability for harm to biodiversity</a>
+        </div>
+
+        <p class="mt-6">
+            It explores the challenges to developing these types of lawsuits. The guide is focused on Indonesia, but also illustrates the potential for similar legal action in other countries.  We are using this guide to aid our further discussion and revisions with government agencies, legal experts and NGOs.  You are welcome to email us if you are interested in joining these discussions, or to learn more. 
+        </p>
+        
+    </div>
+
+
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-black  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+    <div class="bg-red-600 py-6 mt-12">
+        <p class="text-center max-w-4xl mx-auto text-white text-sm px-2">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
+            Conservation Governance Lab, Lancaster Environment Centre, Library Ave, Bailrigg, Lancaster LA1 4AP, UK
+            ©2021 by WILDS</p>
+    </div>
+</body>
+</html>

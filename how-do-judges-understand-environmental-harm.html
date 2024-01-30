@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilds</title>
+    <link rel="stylesheet" href="style/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+<body class="font-sans font-light">
+    <!-- nav -->
+    <div class="max-w-6xl mx-auto px-4 mt-6 py-2 flex sm:flex-row flex-col justify-between items-end gap-6">
+        <div class="flex sm:justify-start justify-center gap-6">
+            <a href="index.html"><img src="wilds-logo.png" alt="wilds" class="h-16"></a>
+            <p class="w-5/12 text-xss">Wildlife: Loss, Damage, & Sanctions.
+                A project on conceptualising the harm from
+                & remedies to illegal wildlife trade.</p>
+        </div>
+        <div class="w-full flex sm:flex-wrap flex-nowrap text-nowrap overflow-x-auto scrollbar-hide gap-6 py-3">
+            <a href="thewildapproach.html">The WILDS approach </a>
+            <a href="ourwork.html">Our work </a>
+            <a href="resources.html">Resources </a>
+            <a href="partnetcollaborator.html">Partner & Collaborators </a>
+            <a href="blog.html" class="font-bold">Blog </a>
+        </div>
+    </div>
+    <div class="border-b border-black mb-4"></div>
+    
+    <div class="max-w-3xl mx-auto px-4">
+        <a href="blog.html" class="text-red-700 font-bold"> <  back</a>
+        <p class="mt-4 text-sm text-right font-light text-gray-500 ">
+            Jul 1, 2018
+        </p>
+        <img src="assets/blog-17.webp" alt="wilds" class="w-full ">
+        <h1 class=" mt-12 font-bold text-2xl">HOW DO JUDGES UNDERSTAND ENVIRONMENTAL HARM?
+        </h1>
+        <p class="mt-6">
+            In the lead-up to the WILDS Projects, a number of our collaborators contributed to a workshop in Riau, Indonesia. In June 2018, it brought together 37 high-court environmental judges from across Indonesia for a 5-day workshop on valuing environmental harm.  This included judges who have ruled on Indonesia’s most important environmental cases, with inputs from experts such as  Justice Meredith Wright (ret.), who established the world’s first environmental court in Vermont; Dr. Carol Jones, who served as chief economist in developing the damage claim following the Exxon Valdez oil spill, and Prof. Bambang Hero, who has served as expert witness on a majority of peatland fire cases in Indonesia. Indonesia is a pioneer in addressing environmental harm through its court system.  This includes cases that are unique in the world, which pursue perpetrators of large-scale environmental harm with litigation to recover funds for restoration.  While similar approaches have been taken in the US (and a small number of other countries) to address oil spills, their application to issues as deforestation is trend-setting. 
+        </p>
+
+        <p class="mt-6">
+            The workshop was organized by the Environmental Law Institute (ELI) and Indonesian Centre for Environmental Law, with support from Bogor Agricultural University and Lancaster Environment Centre, with funding from the Swedish Postal Foundation. This workshop focused on leading challenges operationalising liability for environmental harm, including judges’ ability to understand scientific data, dealing with scientific uncertainty, and methods to value environmental harm. Jacob spoke about issues of dealing with uncertainty and causal pathways of environmental harm.
+        </p>
+       
+
+        
+    </div>
+
+
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-black  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+    <div class="bg-red-600 py-6 mt-12">
+        <p class="text-center max-w-4xl mx-auto text-white text-sm px-2">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
+            Conservation Governance Lab, Lancaster Environment Centre, Library Ave, Bailrigg, Lancaster LA1 4AP, UK
+            ©2021 by WILDS</p>
+    </div>
+</body>
+</html>

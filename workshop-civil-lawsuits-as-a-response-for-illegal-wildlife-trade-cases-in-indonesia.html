@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilds</title>
+    <link rel="stylesheet" href="style/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+<body class="font-sans font-light">
+    <!-- nav -->
+    <div class="max-w-6xl mx-auto px-4 mt-6 py-2 flex sm:flex-row flex-col justify-between items-end gap-6">
+        <div class="flex sm:justify-start justify-center gap-6">
+            <a href="index.html"><img src="wilds-logo.png" alt="wilds" class="h-16"></a>
+            <p class="w-5/12 text-xss">Wildlife: Loss, Damage, & Sanctions.
+                A project on conceptualising the harm from
+                & remedies to illegal wildlife trade.</p>
+        </div>
+        <div class="w-full flex sm:flex-wrap flex-nowrap text-nowrap overflow-x-auto scrollbar-hide gap-6 py-3">
+            <a href="thewildapproach.html">The WILDS approach </a>
+            <a href="ourwork.html">Our work </a>
+            <a href="resources.html">Resources </a>
+            <a href="partnetcollaborator.html">Partner & Collaborators </a>
+            <a href="blog.html" class="font-bold">Blog </a>
+        </div>
+    </div>
+    <div class="border-b border-black mb-4"></div>
+    
+    <div class="max-w-3xl mx-auto px-4">
+        <a href="blog.html" class="text-red-700 font-bold "> <  back</a>
+        <p class=" text-sm text-right font-light text-gray-500 ">Mar 14, 2020</p>
+        <img src="assets/blog-7.webp" alt="wilds" class="w-full ">
+        <h1 class=" mt-12 font-bold text-2xl">WORKSHOP: Civil lawsuits as a response for illegal wildlife trade cases in Indonesia</h1>
+        <p class="mt-6 mb-6">
+            A workshop on civil lawsuits for illegal wildlife trade (IWT) cases was held in Lancaster (1-10th March, 2020). At this event, three Indonesian lawyers, Rika Fajiri, Grahat Nagara and Roni Saputra, joined Lancaster Environment Center researcher, Jacob Phelps, to further explore remedies that may be proposed to defendant of illegal wildlife trade in Indonesia. 
+        </p>
+       
+       <p class="mt-6">
+        Building on our existing conceptual framework for forming IWT lawsuits, this workshop explored many  technical details of Indonesian law that shape how we might operationalise these lawsuits. 
+       </p>
+
+       <p class="mt-6">
+        For example, we considered how the harm caused by IWT can be formally recognised as environmental harm within Indonesia's legal framework, which traditionally focuses on harm to sites/habitat, rather than harm to biodiversity.  We concluded that, while that IWT harm is no different than other types of environmental harm traditionally recognised by the law (e.g., from deforestation, pollution), we would need to specifically articulate pathways of harm in ways that have not been traditionally used in Indonesian environmental legal practice.  This draw on unique interdisciplinary exchange important to ensure that the law effectively protects the environment. 
+       </p>
+
+       <p class="mt-6">
+        Other specific theme we discussed included: 1) what kind of remedies are recognised by Indonesian law, 2) who may be legally propose lawsuits and what kinds of damage claim peach can propose, and 3) what types of actors can be liable for IWT.   
+       </p>
+
+       <p class="mt-6">
+        The workshop also conclude that these lawsuits have significant potential benefit, civil lawsuit for environmental harm caused by IWT need to be used strategically. The lawsuit, for example, need to involves large-scale environmental harm, such as those involving a large number of species or highly threatened species. It is also important that the case related to high-level perpetrators, such as corporate entities, organised crime syndicates, and government collusion.
+       </p>
+
+       <p class="mt-6">
+        The workshop focused on finalising a  draft guideline on how to bring forward civil liability suits for IWT in Indonesia--a resource we think can also be used to inform legal practise in many other countries. 
+       </p>
+    </div>
+
+
+    <!-- goUp -->
+    <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" >
+        <div class="fixed z-40 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
+            <div class="sm:px-4 px-2 sm:py-4 py-2 border border-black  bg-auriga-biru flex items-center justify-center">
+                
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                  </svg>
+                  
+            </div>
+        </div>
+    </div>
+    <div class="bg-red-600 py-6 mt-12">
+        <p class="text-center max-w-4xl mx-auto text-white text-sm px-2">The WILDS Project is supported by the UK Government through the Illegal Wildlife Trade (IWT) Challenge Fund
+            Conservation Governance Lab, Lancaster Environment Centre, Library Ave, Bailrigg, Lancaster LA1 4AP, UK
+            ©2021 by WILDS</p>
+    </div>
+</body>
+</html>
